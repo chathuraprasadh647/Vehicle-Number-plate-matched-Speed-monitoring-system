@@ -100,6 +100,11 @@ The script prints guidance on this to the console when run.
     *   The recognized license plate text (OCR result).
 *   **`plate_for_ocr.jpg`:** This image file shows the latest license plate region that was extracted and sent to Tesseract for OCR. It is overwritten each time a new plate is processed.
 
+### Sample Output Preview
+Below is a schematic illustration of the typical annotations applied to vehicles in the output video:
+
+![Sample Output Illustration](assets/sample_output_illustration.png)
+
 ## Known Limitations / Future Improvements
 *   **License Plate Detection Accuracy:** The current image processing based approach for LP detection can be sensitive to video quality, lighting conditions, plate designs, and vehicle angles. More advanced deep learning models specific to license plate detection could improve this.
 *   **OCR Accuracy:** The accuracy of Tesseract OCR is dependent on the quality (resolution, clarity, lighting, orientation) of the extracted license plate image. Preprocessing helps, but results can vary.
